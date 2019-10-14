@@ -7,8 +7,6 @@ coverImage: ../images/avatar2.jpg
 miniPic: true
 ---
 
-![Ma tête](../images/avatar2.jpg)
-
 Passionné de programmation et de tout ce qui touche au développement informatique, je me suis spécialisé dans les technologies du web, un domaine en constante évolution où chaque jour apporte son lot de nouvelles connaissances.
 Réalisons votre projet et soyez assuré d'obtenir un maximum de visibilité pour toucher votre cœur de cible.
 
