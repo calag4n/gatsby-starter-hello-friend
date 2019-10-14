@@ -17,14 +17,12 @@ const renderAst = new RehypeReact({
 
 const Post = ({
   title,
-  date,
   path,
   coverImage,
-  author,
-  excerpt,
   htmlAst,
   previousPost,
   nextPost,
+  miniPic,
 }) => {
   const previousPath = previousPost && previousPost.frontmatter.path
   const previousLabel = previousPost && previousPost.frontmatter.title
@@ -34,39 +32,22 @@ const Post = ({
   return (
     <div className={style.post}>
       <div className={style.postContent}>
-        <h1 className={style.title}>
-          {excerpt ? <Link to={path}>{title}</Link> : title}
-        </h1>
-        <div className={style.meta}>
-          {date} {author && <>— Written by {author}</>}
-          
-        </div>
+        <h1 className={style.title}>{title}</h1>
 
         {coverImage && (
           <Img
             fluid={coverImage.childImageSharp.fluid}
-            className={style.coverImage}
+            className={miniPic ? style.miniPic : style.coverImage}
           />
         )}
 
-        {excerpt ? (
-          <>
-            <p>{excerpt}</p>
-            <Link to={path} className={style.readMore}>
-              Read more →
-            </Link>
-          </>
-        ) : (
-          <>
-            <div>{renderAst(htmlAst)}</div>
-            <Navigation
-              previousPath={previousPath}
-              previousLabel={previousLabel}
-              nextPath={nextPath}
-              nextLabel={nextLabel}
-            />
-          </>
-        )}
+        <div>{renderAst(htmlAst)}</div>
+        <Navigation
+          previousPath={previousPath}
+          previousLabel={previousLabel}
+          nextPath={nextPath}
+          nextLabel={nextLabel}
+        />
       </div>
     </div>
   )
@@ -74,14 +55,12 @@ const Post = ({
 
 Post.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.string,
   path: PropTypes.string,
   coverImage: PropTypes.object,
-  author: PropTypes.string,
-  excerpt: PropTypes.string,
   htmlAst: PropTypes.string,
   previousPost: PropTypes.object,
   nextPost: PropTypes.object,
+  miniPic: PropTypes.bool,
 }
 
 export default Post
