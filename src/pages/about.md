@@ -1,23 +1,19 @@
 ---
-title: "About"
-date: "2018-07-19"
-author: "Radek"
-path: "/about"
+title: "Qui suis-je ?"
+date: "2019-07-19"
+author: "Steeve Dieu"
+path: /about
+coverImage: ../images/avatar2.jpg
+miniPic: true
 ---
 
-## Hi there
+![Ma tête](../images/avatar2.jpg)
 
-My name is Radek and I'm the author of this starter. I made it to help you present your ideas easier.
+Passionné de programmation et de tout ce qui touche au développement informatique, je me suis spécialisé dans les technologies du web, un domaine en constante évolution où chaque jour apporte son lot de nouvelles connaissances.
+Réalisons votre projet et soyez assuré d'obtenir un maximum de visibilité pour toucher votre cœur de cible.
 
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+Grace aux techniques modernes de SEO j'optimise votre référencement sur les moteurs de recherche.
 
-This starter is pretty basic and covers all of the essentials. All you have to do is start typing!
+En constante veille technologique, j'emploi les derniers et plus efficaces outils pour développer une interface utilisateur instinctive et maximiser la vitesse d'affichage ce qui vous assure un taux de transformation visiteurs/clients le plus élevé possible.
 
-The starter includes:
-
-- **light/dark mode**, depending on your preferences
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
-- nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- responsive youtube/vimeo etc. videos thanks to [**gatsby-remark-embed-video**](https://github.com/borgfriend/gatsby-remark-embed-video)
-
-So, there you have it... enjoy!
+*DIEU Steeve. -Développeur Web.*
