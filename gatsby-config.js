@@ -113,7 +113,6 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
-          'gatsby-remark-component',
         ],
       },
     },
