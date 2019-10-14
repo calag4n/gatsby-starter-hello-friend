@@ -10,7 +10,7 @@ excerpt: "Application test d'achat de livres de Stephen Hawking. Optimisé JAMST
 path: /book-store
 date: "2019-07-17"
 coverImage: ../images/projects/ecom.png
-miniPic: "no"
+miniPic: false
 ---
 
 ![Application test d'achat de livres de Stephen Hawking.](../images/projects/ecom.png)

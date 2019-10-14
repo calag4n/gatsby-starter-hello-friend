@@ -1,11 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import Navigation from './navigation'
-import { toKebabCase } from '../helpers'
-
 import RehypeReact from 'rehype-react'
+
 import Techs from './Techs'
 
 import style from '../styles/post.module.css'
@@ -15,6 +12,7 @@ const renderAst = new RehypeReact({
   components: { techno: Techs },
 }).Compiler
 
+<<<<<<< HEAD
 const Post = ({
   title,
   date,
@@ -40,47 +38,38 @@ const Post = ({
         <div className={style.meta}>
           {date} {author && <>— Written by {author}</>}
         </div>
+=======
+const Post = ({ title, coverImage, htmlAst, miniPic }) => (
+  <div className={style.post}>
+    <div className={style.postContent}>
+      <h1 className={style.title}>{title}</h1>
 
-        {coverImage && (
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
-            className={style.coverImage}
-          />
-        )}
+      {coverImage && (
+        <Img
+          fluid={coverImage.childImageSharp.fluid}
+          className={miniPic ? style.miniPic : style.coverImage}
+        />
+      )}
+>>>>>>> test
 
-        {excerpt ? (
-          <>
-            <p>{excerpt}</p>
-            <Link to={path} className={style.readMore}>
-              Read more →
-            </Link>
-          </>
-        ) : (
-          <>
-            <div>{renderAst(htmlAst)}</div>
-            <Navigation
-              previousPath={previousPath}
-              previousLabel={previousLabel}
-              nextPath={nextPath}
-              nextLabel={nextLabel}
-            />
-          </>
-        )}
-      </div>
+      <div>{renderAst(htmlAst)}</div>
     </div>
-  )
-}
+  </div>
+)
 
 Post.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.string,
-  path: PropTypes.string,
   coverImage: PropTypes.object,
+<<<<<<< HEAD
   author: PropTypes.string,
   excerpt: PropTypes.string,
   htmlAst: PropTypes.string,
   previousPost: PropTypes.object,
   nextPost: PropTypes.object,
+=======
+  htmlAst: PropTypes.string,
+  miniPic: PropTypes.bool,
+>>>>>>> test
 }
 
 export default Post

@@ -10,7 +10,7 @@ excerpt: "Projet d'étude : créer une application de location de vélo urbain e
 path: /book-N-bike
 date: "2019-08-01"
 coverImage: ../images/projects/velo.png
-miniPic: "no"
+miniPic: false
 ---
 
 <!-- markdownlint-disable MD033 -->

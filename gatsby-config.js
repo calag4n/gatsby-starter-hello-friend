@@ -35,8 +35,8 @@ module.exports = {
         path: '/contact',
       },
       {
-        title: `page2`,
-        path: '/page2',
+        title: `Portfolio`,
+        path: '/portfolio',
       },
     ],
   },

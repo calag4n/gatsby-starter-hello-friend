@@ -8,7 +8,11 @@ import Post from '../components/post'
 
 const BlogPostTemplate = ({ data }) => {
   const {
+<<<<<<< HEAD
     frontmatter: { title, date, path, author, coverImage, excerpt, miniPic, tech },
+=======
+    frontmatter: { title, date, path, author, coverImage, excerpt, miniPic },
+>>>>>>> test
     excerpt: autoExcerpt,
     id,
     htmlAst,
@@ -26,9 +30,15 @@ const BlogPostTemplate = ({ data }) => {
         author={author}
         coverImage={coverImage}
         htmlAst={htmlAst}
+<<<<<<< HEAD
         idImage={idImage}
         miniPic={miniPic}
         techs={tech}
+=======
+        previousPost={previous}
+        nextPost={next}
+        miniPic={miniPic}
+>>>>>>> test
       />
     </Layout>
   )
@@ -50,7 +60,10 @@ export const pageQuery = graphql`
         author
         excerpt
         miniPic
+<<<<<<< HEAD
         tech
+=======
+>>>>>>> test
         coverImage {
           childImageSharp {
             fixed(width: 800, height: 400) {

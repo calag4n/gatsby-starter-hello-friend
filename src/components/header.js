@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
@@ -8,13 +9,7 @@ import Menu from './menu'
 import style from '../styles/header.module.css'
 
 const Header = props => {
-  const {
-    siteLogo,
-    logoText,
-    mainMenu,
-    mainMenuItems,
-    defaultTheme,
-  } = props
+  const { siteLogo, logoText, mainMenu, mainMenuItems, defaultTheme } = props
   const defaultThemeState =
     (typeof window !== 'undefined' && window.localStorage.getItem('theme')) ||
     null
@@ -46,7 +41,7 @@ const Header = props => {
       </Helmet>
       <header className={style.header}>
         <div className={style.inner}>
-          <Link to="/">
+          <Link to='/'>
             <div className={style.logo}>
               {siteLogo.src ? (
                 <img src={siteLogo.src} alt={siteLogo.alt} />
