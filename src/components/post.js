@@ -12,33 +12,6 @@ const renderAst = new RehypeReact({
   components: { techno: Techs },
 }).Compiler
 
-<<<<<<< HEAD
-const Post = ({
-  title,
-  date,
-  path,
-  coverImage,
-  author,
-  excerpt,
-  htmlAst,
-  previousPost,
-  nextPost,
-}) => {
-  const previousPath = previousPost && previousPost.frontmatter.path
-  const previousLabel = previousPost && previousPost.frontmatter.title
-  const nextPath = nextPost && nextPost.frontmatter.path
-  const nextLabel = nextPost && nextPost.frontmatter.title
-
-  return (
-    <div className={style.post}>
-      <div className={style.postContent}>
-        <h1 className={style.title}>
-          {excerpt ? <Link to={path}>{title}</Link> : title}
-        </h1>
-        <div className={style.meta}>
-          {date} {author && <>— Written by {author}</>}
-        </div>
-=======
 const Post = ({ title, coverImage, htmlAst, miniPic }) => (
   <div className={style.post}>
     <div className={style.postContent}>
@@ -50,7 +23,6 @@ const Post = ({ title, coverImage, htmlAst, miniPic }) => (
           className={miniPic ? style.miniPic : style.coverImage}
         />
       )}
->>>>>>> test
 
       <div>{renderAst(htmlAst)}</div>
     </div>

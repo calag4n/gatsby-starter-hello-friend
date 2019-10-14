@@ -8,37 +8,21 @@ import Post from '../components/post'
 
 const BlogPostTemplate = ({ data }) => {
   const {
-<<<<<<< HEAD
-    frontmatter: { title, date, path, author, coverImage, excerpt, miniPic, tech },
-=======
-    frontmatter: { title, date, path, author, coverImage, excerpt, miniPic },
->>>>>>> test
+    frontmatter: { title, coverImage, miniPic },
     excerpt: autoExcerpt,
     id,
     htmlAst,
   } = data.markdownRemark
-  const idImage = data.idimg
 
   return (
     <Layout>
-      <SEO title={title} description={excerpt || autoExcerpt} />
+      <SEO title={title} description={autoExcerpt} />
       <Post
         key={id}
         title={title}
-        date={date}
-        path={path}
-        author={author}
         coverImage={coverImage}
         htmlAst={htmlAst}
-<<<<<<< HEAD
-        idImage={idImage}
         miniPic={miniPic}
-        techs={tech}
-=======
-        previousPost={previous}
-        nextPost={next}
-        miniPic={miniPic}
->>>>>>> test
       />
     </Layout>
   )
@@ -60,10 +44,6 @@ export const pageQuery = graphql`
         author
         excerpt
         miniPic
-<<<<<<< HEAD
-        tech
-=======
->>>>>>> test
         coverImage {
           childImageSharp {
             fixed(width: 800, height: 400) {
