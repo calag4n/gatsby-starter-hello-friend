@@ -19,7 +19,6 @@ const Layout = ({ children }) => {
           }
           logoText
           defaultTheme
-          copyrights
           mainMenu {
             title
             path
