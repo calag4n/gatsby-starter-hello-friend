@@ -6,14 +6,14 @@ import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Post from '../components/post'
 
-const BlogPostTemplate = ({ data }) => {
+const BlogPostTemplate = ({ data, pageContext }) => {
   const {
-    frontmatter: { title, date, path, author, coverImage, excerpt, miniPic, tech },
+    frontmatter: { title, date, path, author, coverImage, excerpt, tags },
     excerpt: autoExcerpt,
     id,
     htmlAst,
   } = data.markdownRemark
-  const idImage = data.idimg
+  const { next, previous } = pageContext
 
   return (
     <Layout>
@@ -26,9 +26,9 @@ const BlogPostTemplate = ({ data }) => {
         author={author}
         coverImage={coverImage}
         htmlAst={htmlAst}
-        idImage={idImage}
-        miniPic={miniPic}
-        techs={tech}
+        tags={tags}
+        previousPost={previous}
+        nextPost={next}
       />
     </Layout>
   )
@@ -38,6 +38,10 @@ export default BlogPostTemplate
 
 BlogPostTemplate.propTypes = {
   data: PropTypes.object.isRequired,
+  pageContext: PropTypes.shape({
+    next: PropTypes.object,
+    previous: PropTypes.object,
+  }),
 }
 
 export const pageQuery = graphql`
@@ -45,16 +49,15 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
-        date
+        date(formatString: "DD MMMM YYYY")
         path
         author
         excerpt
-        miniPic
-        tech
+        tags
         coverImage {
           childImageSharp {
-            fixed(width: 800, height: 400) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

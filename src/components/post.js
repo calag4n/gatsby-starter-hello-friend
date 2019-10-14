@@ -22,7 +22,6 @@ const Post = ({
   coverImage,
   author,
   excerpt,
-  tags,
   htmlAst,
   previousPost,
   nextPost,
@@ -40,15 +39,7 @@ const Post = ({
         </h1>
         <div className={style.meta}>
           {date} {author && <>— Written by {author}</>}
-          {tags ? (
-            <div className={style.tags}>
-              {tags.map(tag => (
-                <Link to={`/tag/${toKebabCase(tag)}/`} key={toKebabCase(tag)}>
-                  <span className={style.tag}>#{tag}</span>
-                </Link>
-              ))}
-            </div>
-          ) : null}
+          
         </div>
 
         {coverImage && (
@@ -88,8 +79,7 @@ Post.propTypes = {
   coverImage: PropTypes.object,
   author: PropTypes.string,
   excerpt: PropTypes.string,
-  html: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
+  htmlAst: PropTypes.string,
   previousPost: PropTypes.object,
   nextPost: PropTypes.object,
 }
