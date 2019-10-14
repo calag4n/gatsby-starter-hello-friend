@@ -13,7 +13,6 @@ const Header = props => {
     logoText,
     mainMenu,
     mainMenuItems,
-    menuMoreText,
     defaultTheme,
   } = props
   const defaultThemeState =
@@ -66,7 +65,6 @@ const Header = props => {
               mainMenuItems={mainMenuItems}
               isMobileMenuVisible={isMobileMenuVisible}
               isSubMenuVisible={isSubMenuVisible}
-              menuMoreText={menuMoreText}
               onToggleMobileMenu={onToggleMobileMenu}
               onToggleSubMenu={onToggleSubMenu}
               onChangeTheme={onChangeTheme}
@@ -89,7 +87,6 @@ Header.propTypes = {
     }),
   ),
   mainMenuItems: PropTypes.number,
-  menuMoreText: PropTypes.string,
 }
 
 export default Header

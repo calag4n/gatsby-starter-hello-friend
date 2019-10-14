@@ -24,7 +24,7 @@ module.exports = {
     logoText: config.siteTitleAlt,
     defaultTheme: 'dark',
     postsPerPage: 5,
-    showMenuItems: 2,
+    showMenuItems: 3,
     mainMenu: [
       {
         title: 'Qui suis-je ?',
@@ -35,8 +35,8 @@ module.exports = {
         path: '/contact',
       },
       {
-        title: `Portfolio`,
-        path: '/portfolio',
+        title: `page2`,
+        path: '/page2',
       },
     ],
   },

@@ -49,7 +49,6 @@ const toggleIcon = `M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
 const Menu = ({
   mainMenu,
   mainMenuItems,
-  menuMoreText,
   isMobileMenuVisible,
   isSubMenuVisible,
   onToggleMobileMenu,
@@ -97,7 +96,6 @@ const Menu = ({
                 type="button"
                 aria-label="Menu"
               >
-                {menuMoreText || 'Menu'}{' '}
                 <span className={style.menuArrow}>></span>
               </button>
               {isSubMenuVisible ? (
@@ -133,7 +131,6 @@ Menu.propTypes = {
     }),
   ),
   mainMenuItems: PropTypes.number,
-  menuMoreText: PropTypes.string,
   isMobileMenuVisible: PropTypes.bool,
   isSubMenuVisible: PropTypes.bool,
   onToggleMobileMenu: PropTypes.func,
