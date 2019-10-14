@@ -32,16 +32,8 @@ const Post = ({ title, coverImage, htmlAst, miniPic }) => (
 Post.propTypes = {
   title: PropTypes.string,
   coverImage: PropTypes.object,
-<<<<<<< HEAD
-  author: PropTypes.string,
-  excerpt: PropTypes.string,
-  htmlAst: PropTypes.string,
-  previousPost: PropTypes.object,
-  nextPost: PropTypes.object,
-=======
   htmlAst: PropTypes.string,
   miniPic: PropTypes.bool,
->>>>>>> test
 }
 
 export default Post
