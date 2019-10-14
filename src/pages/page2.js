@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import ProjectCard from '../components/ProjectCard'
 
 
-const Portfolio = () => {
+const page2 = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -18,9 +18,15 @@ const Portfolio = () => {
             excerpt
             frontmatter {
               title
+              link
               date
               path
+              bg
               excerpt
+              primary
+              imgAlt
+              shadow
+              tech
               coverImage {
                 childImageSharp {
                   fluid(maxWidth: 800) {
@@ -46,16 +52,29 @@ const Portfolio = () => {
         {posts.map(({ node }) => {
           const {
             title,
+            link,
+            // eslint-disable-next-line no-unused-vars
+            bg,
+            primary,
             coverImage,
+            imgAlt,
+            shadow,
+            tech,
             path,
           } = node.frontmatter
 
           return (
             <ProjectCard
-              key={title}
-              title={title}
-              coverImage={coverImage}
-              path={path}
+            key={title}
+            title={title}
+            link={link}
+            bg='#202020'
+            primary={primary}
+            coverImage={coverImage}
+            imgAlt={imgAlt}
+            shadow={shadow}
+            techs={tech}
+            path={path}
             />
           )
         })}
@@ -64,4 +83,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default page2
