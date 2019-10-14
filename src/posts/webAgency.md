@@ -10,6 +10,7 @@ excerpt: "Projet d'étude : integrer une maquette uniquement en CSS et HTML. les
 path: /webagency
 date: "2019-06-17"
 coverImage: ../images/projects/webagency.png
+miniPic: "no"
 ---
 
 ![Maquette d'une agence Web](../images/projects/webagency.png)

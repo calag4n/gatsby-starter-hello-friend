@@ -10,6 +10,7 @@ excerpt: "Un site qui permet aux clients de découvrir et directement réserver 
 path: /serzat
 date: "2019-09-17"
 coverImage: ../images/projects/serzat.jpg
+miniPic: "no"
 ---
 
 <!-- markdownlint-disable MD033 -->
