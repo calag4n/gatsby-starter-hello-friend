@@ -238,20 +238,22 @@ button, input, textarea {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-height: 100vh;
+  padding-top: 7vh;
+
 }
 
 .content {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  align-items: center;
+  
   justify-content: center;
-  margin: 50px auto;
-  width: 100%;
-  max-width: 800px;;
+  margin: 50px 12vw;
+
 
   @media (--phone) {
-    margin-top: 0;
+    margin: 0 2vw;
   }
 
   @media (--tablet) {
@@ -308,9 +310,9 @@ hr {
 }
 
 footer {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 1.5rem;
 
   @media (--phone) {
     display: flex;

@@ -3,8 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
   padding: 20px;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 
   :global .dark-theme :local & {
     background: #252627;
@@ -57,6 +60,11 @@
 .right {
   display: flex;
   position: relative;
+}
+
+.logo{
+  max-height: 2em;
+  margin-right: 1em;
 }
 
 @keyframes cursor {

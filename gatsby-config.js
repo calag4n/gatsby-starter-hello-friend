@@ -4,34 +4,39 @@ const postCSSUrl = require('postcss-url')
 const postCSSImports = require('postcss-import')
 const cssnano = require('cssnano')
 const postCSSMixins = require('postcss-mixins')
+const config = require('./src/config')
+
+
 
 module.exports = {
+
+
+
   siteMetadata: {
-    title: `Hello Friend`,
-    description: `A simple starter for Gatsby. That's it.`,
-    copyrights: '',
-    author: `@panr`,
+    title: config.siteTitle,
+    description: config.siteDescription,
+    author: config.siteAuthor,
+    siteUrl: config.siteUrl + pathPrefix,
     logo: {
-      src: '',
-      alt: '',
+      src: config.siteLogo,
+      alt: config.siteLogoAlt,
     },
-    logoText: 'hello friend',
+    logoText: config.siteTitleAlt,
     defaultTheme: 'dark',
     postsPerPage: 5,
     showMenuItems: 2,
-    menuMoreText: 'Show more',
     mainMenu: [
       {
-        title: 'About',
+        title: 'Qui suis-je ?',
         path: '/about',
       },
       {
-        title: 'page2',
-        path: '/page2',
+        title: 'Contact',
+        path: '/contact',
       },
       {
-        title: 'Example',
-        path: '/example',
+        title: `Portfolio`,
+        path: '/portfolio',
       },
     ],
   },

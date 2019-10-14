@@ -21,8 +21,15 @@
     margin: 0 0 10px;
   }
 
-  img {
+  span {
     border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-height: 50vh;
+    & img {
+      object-position: top !important;
+      border-radius: 8px;
+    }
   }
 }
 
@@ -35,7 +42,18 @@
 .coverImage {
   border-radius: 8px;
   margin-bottom: 40px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  max-height: 50vh;
+  & img {
+    object-position: top !important;
+  }
+}
+
+.miniPic {
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 10em;
 }
 
 .meta {
@@ -45,7 +63,7 @@
 
 .tags {
   margin-top: 10px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .tag {
