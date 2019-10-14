@@ -1,8 +1,27 @@
 import React from 'react'
+import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 import ProjectCard from '../components/ProjectCard'
+import H1 from '../components/H1'
+
+const ProjectsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+`
 
 const page2 = () => {
   const data = useStaticQuery(graphql`
@@ -46,8 +65,9 @@ const page2 = () => {
 
   return (
     <Layout>
-      <h1>Page 2</h1>
-      <div>
+      <SEO title='Portfolio' description='Quelques exemples de mon travail.' />
+      <H1>Page 2</H1>
+      <ProjectsWrapper>
         {posts.map(({ node }) => {
           const {
             title,
@@ -77,7 +97,7 @@ const page2 = () => {
             />
           )
         })}
-      </div>
+      </ProjectsWrapper>
     </Layout>
   )
 }

@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import RehypeReact from 'rehype-react'
 import Navigation from './navigation'
 import { toKebabCase } from '../helpers'
 
-import RehypeReact from 'rehype-react'
 import Techs from './Techs'
 
 import style from '../styles/post.module.css'
