@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-friend",
-  "description": "A simple starter for Gatsby. That's it.",
-  "version": "0.2.0",
-  "author": "Radek Kozieł <radoslaw.koziel@gmail.com>",
+  "name": "web-motion",
+  "description": "Web Motion. Créateur de solutions web adaptées à chaque projet.",
+  "version": "2.0.0",
+  "author": "calag4n <console.logan@gmail.com>",
   "keywords": [
     "gatsby",
     "minimal",

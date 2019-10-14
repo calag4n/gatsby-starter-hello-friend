@@ -24,6 +24,7 @@ const ProjectsWrapper = styled.div`
 `
 
 const page2 = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
