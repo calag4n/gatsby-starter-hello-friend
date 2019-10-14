@@ -6,7 +6,7 @@ module.exports = {
 
   siteTitle: 'Web Motion by DIEU Steeve', // Navigation and Site Title
   siteTitleAlt: 'Web Motion', // Alternative Site title for SEO
-  siteUrl: 'https://web-motion.net', // Domain of your site. No trailing slash!
+  siteUrl: 'https://web-motion.net/', // Domain of your site. No trailing slash!
   siteLanguage: 'fr-FR', // Language Tag on <html> element
   siteLogo: 'logo.png', // Used for SEO and manifest
   siteLogoAlt: 'Logo Web Motion',

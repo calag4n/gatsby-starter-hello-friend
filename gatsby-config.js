@@ -16,7 +16,7 @@ module.exports = {
     title: config.siteTitle,
     description: config.siteDescription,
     author: config.siteAuthor,
-    siteUrl: config.siteUrl + pathPrefix,
+    siteUrl: config.siteUrl,
     logo: {
       src: config.siteLogo,
       alt: config.siteLogoAlt,
