@@ -16,7 +16,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby clean && gatsby develop",
+    "start": "gatsby clean && gatsby develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
@@ -38,7 +38,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.2.0",
