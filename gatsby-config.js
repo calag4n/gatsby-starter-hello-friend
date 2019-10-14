@@ -129,5 +129,7 @@ module.exports = {
         icon: `src/images/hello-icon.png`,
       },
     },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
   ],
 }
