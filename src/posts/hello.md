@@ -6,6 +6,7 @@ coverImage: "../images/hello.jpg"
 author: "Elliot"
 excerpt: '"Hello, friend?" That''s lame. Maybe I should give you a name...'
 tags: ["rob____ot", "hello friend"]
+tech: [bootstrap, css3]
 ---
 
 > "Hello, friend?" That's lame. Maybe I should give you a name...\

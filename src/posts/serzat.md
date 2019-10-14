@@ -4,7 +4,7 @@ link: 'https://serzat-gite-ardeche/'
 bg: '#39424D'
 primary: '#51DD58'
 imgAlt: "Page d'accueil du gîte de Serzat"
-tech: [react, gatsby, firebase, netlify, zapier]
+tech: [firebase, css3]
 shadow: 'rgba(0,200,0,0.5)'
 excerpt: "Un site qui permet aux clients de découvrir et directement réserver un gîte en Ardèche."
 path: /serzat

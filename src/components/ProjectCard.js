@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
+import Techs from './Techs'
 
 const Wrapper = styled(Link)`
   width: 100%;
@@ -71,6 +72,7 @@ const ProjectCard = ({
   coverImage,
   imgAlt,
   shadow,
+  techs,
   description,
   path,
 }) => (
@@ -89,6 +91,8 @@ const ProjectCard = ({
     <Text>
       {description}
       <br />
+      <br />
+      <Techs techs={techs} />
     </Text>
   </Wrapper>
 )
