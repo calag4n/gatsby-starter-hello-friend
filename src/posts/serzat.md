@@ -12,6 +12,9 @@ date: "2019-09-17"
 coverImage: ../images/projects/serzat.jpg
 ---
 
+<!-- markdownlint-disable MD033 -->
+<techno techs='react,gatsby,firebase,netlify,zapier'></techs>
+
 *[https://serzat-gite-ardeche.com/](https://serzat-gite-ardeche.com/)*
 
 ---

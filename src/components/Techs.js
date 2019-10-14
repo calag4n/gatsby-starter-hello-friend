@@ -47,14 +47,91 @@ const Techs = ({ techs }) => {
           }
         }
       }
+      gatsby: file(relativePath: { eq: "techs/gatsby.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      html5: file(relativePath: { eq: "techs/html5.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      jquery: file(relativePath: { eq: "techs/jquery.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      js: file(relativePath: { eq: "techs/js.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      lambda: file(relativePath: { eq: "techs/lambda.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      maps: file(relativePath: { eq: "techs/maps.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      netlify: file(relativePath: { eq: "techs/netlify.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      react: file(relativePath: { eq: "techs/react.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      stripe: file(relativePath: { eq: "techs/stripe.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      styledComponent: file(relativePath: { eq: "techs/styledComponent.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      zapier: file(relativePath: { eq: "techs/zapier.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
- 
- let technos = []
+
+  let technos = []
 
   if (typeof techs === 'string') {
     technos = techs.split(',')
-  }else{
+  } else {
     technos = techs
   }
   const logosBase = {}

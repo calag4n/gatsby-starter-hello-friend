@@ -5,7 +5,15 @@ import Img from 'gatsby-image'
 import Navigation from './navigation'
 import { toKebabCase } from '../helpers'
 
+import RehypeReact from 'rehype-react'
+import Techs from './Techs'
+
 import style from '../styles/post.module.css'
+
+const renderAst = new RehypeReact({
+  createElement: React.createElement,
+  components: { techno: Techs },
+}).Compiler
 
 const Post = ({
   title,
@@ -15,7 +23,7 @@ const Post = ({
   author,
   excerpt,
   tags,
-  html,
+  htmlAst,
   previousPost,
   nextPost,
 }) => {
@@ -59,7 +67,7 @@ const Post = ({
           </>
         ) : (
           <>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            <div>{renderAst(htmlAst)}</div>
             <Navigation
               previousPath={previousPath}
               previousLabel={previousLabel}

@@ -106,6 +106,7 @@ ProjectCard.propTypes = {
   coverImage: PropTypes.object,
   imgAlt: PropTypes.string,
   path: PropTypes.string,
+  techs: PropTypes.array.isRequired,
   shadow: PropTypes.string,
   description: PropTypes.string,
 }

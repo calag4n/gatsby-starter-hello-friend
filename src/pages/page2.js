@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import ProjectCard from '../components/ProjectCard'
 
-
 const page2 = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -65,16 +64,16 @@ const page2 = () => {
 
           return (
             <ProjectCard
-            key={title}
-            title={title}
-            link={link}
-            bg='#202020'
-            primary={primary}
-            coverImage={coverImage}
-            imgAlt={imgAlt}
-            shadow={shadow}
-            techs={tech}
-            path={path}
+              key={title}
+              title={title}
+              link={link}
+              bg='#202020'
+              primary={primary}
+              coverImage={coverImage}
+              imgAlt={imgAlt}
+              shadow={shadow}
+              techs={tech}
+              path={path}
             />
           )
         })}
